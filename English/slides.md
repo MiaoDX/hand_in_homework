@@ -1,5 +1,5 @@
 % The answer to life, the universe, and everything
-% MiaoDX ç¼ªä¸œæ—­ MiaoDX@hotmail.com
+% MiaoDX çÑ¶«Ðñ MiaoDX@hotmail.com
 % April 5, 2017
 
 # Quick Question
@@ -8,7 +8,7 @@
 
 >The answer to life, the universe, and everything
 >
---ã€ŽThe Hitchhiker's Guide to the Galaxyã€
+--¡ºThe Hitchhiker's Guide to the Galaxy¡»
 
 Disclaimer: 
 
@@ -25,9 +25,9 @@ Or,
 
 ---
 
-when he is young.
+When he is young.
 
-![ã€Žç«¥è¶£ã€-- æ²ˆå¤](pics/child.jpg)
+![¡ºÍ¯È¤¡»-- Éò¸´](pics/child.jpg)
 
 ## Could it be technically possible for human to be god?
 
@@ -40,13 +40,13 @@ when he is young.
 
 ## Brief intro of AI
 
-![The incomplete history of AI, one](pics/ai_history_1.jpg){#fig:ai_history_1 width=80%}
+![Incomplete history of AI, one](pics/ai_history_1.jpg){#fig:ai_history_1 width=80%}
 
-Ref: [äººå·¥æ™ºèƒ½20å¹´ï¼Œ26ä¸ªä¸å¯ä¸çŸ¥çš„åŽ†å²åæ ‡äº‹ä»¶](http://iyiou.baijia.baidu.com/article/687979)
+Ref: [ÈË¹¤ÖÇÄÜ20Äê£¬26¸ö²»¿É²»ÖªµÄÀúÊ·×ø±êÊÂ¼þ](http://iyiou.baijia.baidu.com/article/687979)
 
 ---
 
-![The incomplete history of AI, two](pics/ai_history_2.jpg){#fig:ai_history_2 width=60%}
+![Incomplete history of AI, two](pics/ai_history_2.jpg){#fig:ai_history_2 width=60%}
 
 Ref: [History of A.I.: Artificial Intelligence (Infographic)](http://www.livescience.com/47544-history-of-a-i-artificial-intelligence-infographic.html)
 
@@ -73,7 +73,7 @@ Ref: [History of A.I.: Artificial Intelligence (Infographic)](http://www.livesci
     - BAT
     - Didi
 
-* And universities all over the world.
+* And, universities all over the world.
 
 # So, AI is around the corner?
 
@@ -88,28 +88,28 @@ Ref: [The state of Computer Vision and AI: we are really, really far away. Oct 2
 
 ---
 
->ä¸è¯†åºå±±çœŸé¢ç›®ï¼Œåªç¼˜èº«åœ¨æ­¤å±±ä¸­
-> -- è‹è½¼ã€Žé¢˜è¥¿æž—å£ã€
+>²»Ê¶Â®É½ÕæÃæÄ¿£¬Ö»ÔµÉíÔÚ´ËÉ½ÖÐ
+> -- ËÕéø¡ºÌâÎ÷ÁÖ±Ú¡»
 
 150 years ago, there were no cars, now we send human into outer space.
 
-30 years ago (Sep. 1987), China send out the first email:
+30 years ago (Sep. 1987), China sent out the first email:
 
 >Across the Great Wall we can reach every corner in the world
->ï¼ˆè¶Šè¿‡é•¿åŸŽï¼Œèµ°å‘ä¸–ç•Œï¼‰
+>£¨Ô½¹ý³¤³Ç£¬×ßÏòÊÀ½ç£©
 
-Now, almost everyone have the access to Internet.
+Now, almost everyone has the access to Internet.
 
-25 years ago, most of us have not come into this world, now, we are ... 
+25 years ago, most of us have not come into this world, now, we are... 
 
 ## So, just image
 
-You have a parter:
+You have a partner:
 
 * who can cheer you up when you're upset
-* who can alway chat to you or keep silent as you wish
+* who can always chat to you or keep silent as you wish
 * who remember each and every stuff you need to keep in mind
-* who take care of your heath like a outstanding doctor or expert coach in gym
+* who take care of your health like a outstanding doctor or expert coach in gym
 * who make you breakfast, lunch, and supper like a chief cook of restaurant in "Le Guide Michelin"
 * who looks exactly like the one you want to marry in dream but have no chance in reality
 * who can also kid around if you want that
@@ -134,9 +134,9 @@ Just one tiny issue, he/she is a robot under perfect human skin with emotion jus
 
 ---
 
-Just like the former one, the only issue is all there are virtual, but so real that you just can not tell the difference.
+Just like the former one, the only issue is all there are virtual, but so real that you just cannot tell the difference.
 
-Maybe you think it disgusting, then, just treat it as pill for some who really need a big lie to keep alive.
+Maybe you think it disgusting, then, just treat it as a pill for some who really need a big lie to keep alive.
 
 
 Or maybe
@@ -145,14 +145,14 @@ Someone insane just start the nuclear war, and like what has been said in the Bi
 
 ---
 
->${}^{10}$ä½†ä¸»çš„æ—¥å­è¦åƒè´¼æ¥åˆ°ä¸€æ ·ï¼›é‚£æ—¥ï¼Œå¤©å¿…å¤§æœ‰å“å£°åºŸåŽ»ï¼Œæœ‰å½¢è´¨çš„éƒ½è¦è¢«çƒˆç«é”€åŒ–ï¼Œåœ°å’Œå…¶ä¸Šçš„ç‰©éƒ½è¦çƒ§å°½äº†ã€‚
+>${}^{10}$µ«Ö÷µÄÈÕ×ÓÒªÏñÔôÀ´µ½Ò»Ñù£»ÄÇÈÕ£¬Ìì±Ø´óÓÐÏìÉù·ÏÈ¥£¬ÓÐÐÎÖÊµÄ¶¼Òª±»ÁÒ»ðÏú»¯£¬µØºÍÆäÉÏµÄÎï¶¼ÒªÉÕ¾¡ÁË¡£
 >
-> -- ã€Žæ–°çº¦Â·å½¼å¾—åŽä¹¦Â·ç¬¬ä¸‰ç« ã€
+> -- ¡ºÐÂÔ¼¡¤±ËµÃºóÊé¡¤µÚÈýÕÂ¡»
 
 
->${}^{10}$But Jehovahâ€™s day will come as a thief, in which the heavens will pass away with a roar, but the elements being intensely hot will be dissolved, and earth and the works in it will be exposed.
+>${}^{10}$But Jehovah¡¯s day will come as a thief, in which the heavens will pass away with a roar, but the elements being intensely hot will be dissolved, and earth and the works in it will be exposed.
 >
-> -- ã€Ž2 Peter. 3:10 Christian Greek Scripturesã€
+> -- ¡º2 Peter. 3:10 Christian Greek Scriptures¡»
 
 ## Mission & Vision
 
