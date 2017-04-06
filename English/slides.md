@@ -30,8 +30,8 @@ when he is young.
 ## Could it be technically possible for human to be god?
 
 * Clone/Gene Tech
-* Nuclear power
-* Robots, computer, AI
+* Nuclear Power
+* Robots, Computer, AI
 
 
 # AI
@@ -68,7 +68,7 @@ when he is young.
 
 ![Far away from AI](pics/obamafunny.jpg){#fig:obamafunny width=50%}
 
-Ref:[The state of Computer Vision and AI: we are really, really far away.](https://karpathy.github.io/2012/10/22/state-of-computer-vision/)
+Ref:[The state of Computer Vision and AI: we are really, really far away. Oct 22, 2012](https://karpathy.github.io/2012/10/22/state-of-computer-vision/)
 
 
 # The Future
@@ -82,7 +82,8 @@ Ref:[The state of Computer Vision and AI: we are really, really far away.](https
 
 30 years ago (Sep. 1987), China send out the first email.
 
->Across the Great Wall we can reach every corner in the world（越过长城，走向世界）
+>Across the Great Wall we can reach every corner in the world
+>（越过长城，走向世界）
 
 Now, almost everyone have the access to internet.
 
@@ -97,7 +98,7 @@ You have a parter:
 * who remember each and everything you need to keep in mind
 * who take care of your heath like a outstanding doctor or export coach in gym
 * who make you breakfast, lunch, and supper like a chief cook of restaurant in "Le Guide Michelin"
-* who looks exactly like the one you want to marry but no chance
+* who looks exactly like the one you want to marry but have no chance
 * who can also kid around if you want that
 
 ---
@@ -109,3 +110,34 @@ Just one tiny issue, he/she is a robot under perfect human skin with emotion jus
 >A: So, what do you think?
 >
 >B: I don't by it, but will buy if true.
+
+
+## A new world
+
+* you have the power to choose whoever you are, do whatever you want to do
+* you don't have to work extremely hard in your whole life to pay for a room less than $100m^2$
+* you don't have to spend years with a girl/boy and be left alone
+* you don't have to suffer relatives or very close friends pass away
+
+---
+
+Just like the former one, the only issue is all there are virtual, but so real that you just can not tell the difference.
+
+Maybe you think it disgusting, then, just treat it as pill for some who really need a big lie to be alive.
+
+
+## Or maybe
+
+Someone insane just start the nuclear war, and like what has been said in the Bible:
+
+>${}^{10}$但主的日子要像贼来到一样；那日，天必大有响声废去，有形质的都要被烈火销化，地和其上的物都要烧尽了。
+>
+> -- 『新约·彼得后书·第三章』
+
+
+## Mission & Vision
+
+I do hope maybe 45 or 50 years later, I can introduce robots or AI like I described before to the public.
+
+
+# Thanks & Maybe Questions?
