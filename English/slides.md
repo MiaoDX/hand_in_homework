@@ -1,5 +1,5 @@
-% The answer to life, the universe, and everything
-% MiaoDX çÑ¶«Ğñ MiaoDX@hotmail.com
+ï»¿% The answer to life, the universe, and everything
+% MiaoDX ç¼ªä¸œæ—­ MiaoDX@hotmail.com
 % April 5, 2017
 
 # Quick Question
@@ -8,7 +8,7 @@
 
 >The answer to life, the universe, and everything
 >
---¡ºThe Hitchhiker's Guide to the Galaxy¡»
+--ã€The Hitchhiker's Guide to the Galaxyã€
 
 Disclaimer: 
 
@@ -27,7 +27,7 @@ Or,
 
 When he is young.
 
-![¡ºÍ¯È¤¡»-- Éò¸´](pics/child.jpg)
+![ã€ç«¥è¶£ã€-- æ²ˆå¤](pics/child.jpg)
 
 ## Could it be technically possible for human to be god?
 
@@ -42,7 +42,7 @@ When he is young.
 
 ![Incomplete history of AI, one](pics/ai_history_1.jpg){#fig:ai_history_1 width=80%}
 
-Ref: [ÈË¹¤ÖÇÄÜ20Äê£¬26¸ö²»¿É²»ÖªµÄÀúÊ·×ø±êÊÂ¼ş](http://iyiou.baijia.baidu.com/article/687979)
+Ref: [äººå·¥æ™ºèƒ½20å¹´ï¼Œ26ä¸ªä¸å¯ä¸çŸ¥çš„å†å²åæ ‡äº‹ä»¶](http://iyiou.baijia.baidu.com/article/687979)
 
 ---
 
@@ -88,15 +88,15 @@ Ref: [The state of Computer Vision and AI: we are really, really far away. Oct 2
 
 ---
 
->²»Ê¶Â®É½ÕæÃæÄ¿£¬Ö»ÔµÉíÔÚ´ËÉ½ÖĞ
-> -- ËÕéø¡ºÌâÎ÷ÁÖ±Ú¡»
+>ä¸è¯†åºå±±çœŸé¢ç›®ï¼Œåªç¼˜èº«åœ¨æ­¤å±±ä¸­
+> -- è‹è½¼ã€é¢˜è¥¿æ—å£ã€
 
 150 years ago, there were no cars, now we send human into outer space.
 
 30 years ago (Sep. 1987), China sent out the first email:
 
 >Across the Great Wall we can reach every corner in the world
->£¨Ô½¹ı³¤³Ç£¬×ßÏòÊÀ½ç£©
+>ï¼ˆè¶Šè¿‡é•¿åŸï¼Œèµ°å‘ä¸–ç•Œï¼‰
 
 Now, almost everyone has the access to Internet.
 
@@ -145,14 +145,14 @@ Someone insane just start the nuclear war, and like what has been said in the Bi
 
 ---
 
->${}^{10}$µ«Ö÷µÄÈÕ×ÓÒªÏñÔôÀ´µ½Ò»Ñù£»ÄÇÈÕ£¬Ìì±Ø´óÓĞÏìÉù·ÏÈ¥£¬ÓĞĞÎÖÊµÄ¶¼Òª±»ÁÒ»ğÏú»¯£¬µØºÍÆäÉÏµÄÎï¶¼ÒªÉÕ¾¡ÁË¡£
+>${}^{10}$ä½†ä¸»çš„æ—¥å­è¦åƒè´¼æ¥åˆ°ä¸€æ ·ï¼›é‚£æ—¥ï¼Œå¤©å¿…å¤§æœ‰å“å£°åºŸå»ï¼Œæœ‰å½¢è´¨çš„éƒ½è¦è¢«çƒˆç«é”€åŒ–ï¼Œåœ°å’Œå…¶ä¸Šçš„ç‰©éƒ½è¦çƒ§å°½äº†ã€‚
 >
-> -- ¡ºĞÂÔ¼¡¤±ËµÃºóÊé¡¤µÚÈıÕÂ¡»
+> -- ã€æ–°çº¦Â·å½¼å¾—åä¹¦Â·ç¬¬ä¸‰ç« ã€
 
 
->${}^{10}$But Jehovah¡¯s day will come as a thief, in which the heavens will pass away with a roar, but the elements being intensely hot will be dissolved, and earth and the works in it will be exposed.
+>${}^{10}$But Jehovahâ€™s day will come as a thief, in which the heavens will pass away with a roar, but the elements being intensely hot will be dissolved, and earth and the works in it will be exposed.
 >
-> -- ¡º2 Peter. 3:10 Christian Greek Scriptures¡»
+> -- ã€2 Peter. 3:10 Christian Greek Scripturesã€
 
 ## Mission & Vision
 
