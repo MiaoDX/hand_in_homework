@@ -1,1 +1,1 @@
-pandoc -t revealjs -s slides.md -o slides.html -V theme:serif2
+pandoc -t revealjs -s slides.md -o slides.html -V theme=serif2 -V revealjs-url=../pandoc_markdown_revealjs/reveal.js -i

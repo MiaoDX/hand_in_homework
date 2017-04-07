@@ -10,6 +10,8 @@
 >
 --『The Hitchhiker's Guide to the Galaxy』
 
+. . .
+
 Disclaimer: 
 
 All things here are just my own opinions, <br>just treat them as jokes if you really disagree.
@@ -21,6 +23,8 @@ All things here are just my own opinions, <br>just treat them as jokes if you re
 * Some games
 * Really sick :)
 
+. . .
+
 Or, 
 
 ---
@@ -31,10 +35,19 @@ When he is young.
 
 ## Could it be technically possible for human to be god?
 
-* Clone/Gene Tech
+* Clone/Gene Tech => GMF(genetically modified food)
 * Nuclear Power
 * Robots, Computer, AI
 
+<div class="notes">
+Genetically [dʒə'nɛtɪklɪ] modified, corn, soybean ['sɔibi:n]
+
+Ethic debate of human cloning
+
+Hydrogen ['haɪdrədʒ(ə)n] bomb
+
+Atomic [ə'tɒmɪk] bomb
+</div>
 
 # AI
 
@@ -69,15 +82,23 @@ Ref: [History of A.I.: Artificial Intelligence (Infographic)](http://www.livesci
     - Microsoft
     - IBM
 
+. . .
+
+
 * [Chinese Companies]
     - BAT
     - Didi
+
+. . .
+
 
 * And, universities all over the world.
 
 # So, AI is around the corner?
 
 ## Computer Vision
+
+. . .
 
 ![Far away from AI](pics/obamafunny.jpg){#fig:obamafunny width=50%}
 
@@ -91,7 +112,11 @@ Ref: [The state of Computer Vision and AI: we are really, really far away. Oct 2
 >不识庐山真面目，只缘身在此山中
 > -- 苏轼『题西林壁』
 
+. . .
+
 150 years ago, there were no cars, now we send human into outer space.
+
+. . .
 
 30 years ago (Sep. 1987), China sent out the first email:
 
@@ -99,6 +124,8 @@ Ref: [The state of Computer Vision and AI: we are really, really far away. Oct 2
 >（越过长城，走向世界）
 
 Now, almost everyone has the access to Internet.
+
+. . .
 
 25 years ago, most of us have not come into this world, now, we are... 
 
@@ -118,7 +145,11 @@ You have a partner:
 
 PLEASE add the list as you wish.
 
+. . .
+
 Just one tiny issue, he/she is a robot under perfect human skin with emotion just like human.
+
+. . .
 
 >A: So, what do you think?
 >
@@ -136,8 +167,11 @@ Just one tiny issue, he/she is a robot under perfect human skin with emotion jus
 
 Just like the former one, the only issue is all there are virtual, but so real that you just cannot tell the difference.
 
+. . .
+
 Maybe you think it disgusting, then, just treat it as a pill for some who really need a big lie to keep alive.
 
+. . .
 
 Or maybe
 
