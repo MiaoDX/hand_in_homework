@@ -1,4 +1,4 @@
-﻿% The answer to life, the universe, and everything
+﻿% The answer to life,<br> the universe,<br> and everything
 % MiaoDX 缪东旭 MiaoDX@hotmail.com
 % April 5, 2017
 
