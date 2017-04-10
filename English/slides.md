@@ -33,7 +33,7 @@ When he is young.
 
 ![『童趣』-- 沈复](pics/child.jpg)
 
-## Could it be technically possible for human to be god?
+## Could it be technically possible for a human to be a god?
 
 * Clone/Gene Tech => GMF(genetically modified food)
 * Nuclear Power
@@ -42,7 +42,7 @@ When he is young.
 <div class="notes">
 Genetically [dʒə'nɛtɪklɪ] modified, corn, soybean ['sɔibi:n]
 
-Ethic debate of human cloning
+Ethical debate of human cloning
 
 Hydrogen ['haɪdrədʒ(ə)n] bomb
 
@@ -136,7 +136,7 @@ You have a partner:
 * who can cheer you up when you're upset
 * who can always chat to you or keep silent as you wish
 * who remember each and every stuff you need to keep in mind
-* who take care of your health like a outstanding doctor or expert coach in gym
+* who take care of your health like an outstanding doctor or expert coach in gym
 * who make you breakfast, lunch, and supper like a chief cook of restaurant in "Le Guide Michelin"
 * who looks exactly like the one you want to marry in dream but have no chance in reality
 * who can also kid around if you want that
@@ -147,7 +147,7 @@ PLEASE add the list as you wish.
 
 . . .
 
-Just one tiny issue, he/she is a robot under perfect human skin with emotion just like human.
+Just one tiny issue, he/she is a robot under a perfect human skin with emotion just like a human.
 
 . . .
 
@@ -175,7 +175,7 @@ Maybe you think it disgusting, then, just treat it as a pill for some who really
 
 Or maybe
 
-Someone insane just start the nuclear war, and like what has been said in the Bible:
+Someone insane just starts the nuclear war, and like what has been said in the Bible:
 
 ---
 
