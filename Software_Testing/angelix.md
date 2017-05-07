@@ -84,3 +84,8 @@ make clean-all
 ```
 
 And also need to remove possible files in `/usr/bin`(not find yet), `/usr/lib`(minisat), `/usr/local/bin`(stp), `usr/local/bin`(stp)
+
+
+## PROCESS
+
+After failed to recompile with the original files, I decide to try another one or just finish the project by using the virtualbox, but the author said he succeed in make a fresh install after some changes to the Makefile, well, ...
