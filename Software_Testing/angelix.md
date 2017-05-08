@@ -83,7 +83,7 @@ src folder: SF
 make clean-all
 ```
 
-And also need to remove possible files in `/usr/bin`(not find yet), `/usr/lib`(minisat), `/usr/local/bin`(stp), `usr/local/bin`(stp)
+And also need to remove possible files in `/usr/bin`(minisat), `/usr/lib`(minisat), `/usr/local/bin`(stp), `usr/local/bin`(stp)
 
 
 ## PROCESS
