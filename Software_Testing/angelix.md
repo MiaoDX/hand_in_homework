@@ -89,3 +89,9 @@ And also need to remove possible files in `/usr/bin`(minisat), `/usr/lib`(minisa
 ## PROCESS
 
 After failed to recompile with the original files, I decide to try another one or just finish the project by using the virtualbox, but the author said he succeed in make a fresh install after some changes to the Makefile, well, ...
+
+
+
+## Build in a really fresh new virtualenv
+
+Line#100 `cd build && git clone --branch=2.1.2 $(STP_URL)`
