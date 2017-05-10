@@ -10,7 +10,7 @@ Software Testing ==(in some view) Verification (do thing right) + Validation (do
 
 * Fault: the mistake in code
 * Error: execute the wrong code
-* Failure: wrong output compared with predefined results
+* Failure: execute the wrong code and get wrong output
 
 
 RIP model: three conditions for a failure to be observed:
