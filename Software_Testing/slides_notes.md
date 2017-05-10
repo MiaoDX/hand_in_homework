@@ -128,7 +128,9 @@ T3 (true,false) false
 Thus, T1 and T2 can cover C1, T1 and T3 can cover C2.
 
 
-SO, `MCC > MC/DC > (CC, DC)`
+SO, `MCC > MC/DC > (CC, DC)`.
+
+Note: `>` means stronger, not `contains`. For example, a `CC` test case can be `(true, true), (false, false)`, in which case, `(false, false)` is not an element of MC/DC test cases.
 
 ## Ch06-Blackbox Testing
 
@@ -138,13 +140,15 @@ SO, `MCC > MC/DC > (CC, DC)`
 * Boundary value analysis (BVA, 边界值), the boundary cases for each equivalence class in ECP, integer: {MAX_INT, MAX_INT-1, -1, 0, 1, MIN_INT+1, MIN_INT}
 * Cause-effect graph and decision table (因果图与决策表)
 
-Decision table:
+### Decision table:
 
-Condition + Action -> Policy. And simplify this table to be minimal (Some conditions are the same underneath).
+According to the provided Policy, make a table contains Condition + Action. 
+
+And simplify this table as much as possible (Some conditions will lead to the same action no matter they are true or not).
 
 Design test case for each column of decision table.
 
-Cause-effect graph:
+### Cause-effect graph:
 
 Make cause-effect graph and translate it to decision table.
 
