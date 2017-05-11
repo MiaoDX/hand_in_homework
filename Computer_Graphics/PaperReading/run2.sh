@@ -1,0 +1,1 @@
+pandoc -f markdown -t latex Tone-Mapped_Mean-Shift_Based_Environment_Map_Sampling.md -o latex_file/Tone-Mapped_Mean-Shift_Based_Environment_Map_Sampling.tex

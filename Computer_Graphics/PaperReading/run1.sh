@@ -1,0 +1,1 @@
+pandoc -f markdown -t latex photon_mapping.md -o latex_file/photon_mapping.tex
