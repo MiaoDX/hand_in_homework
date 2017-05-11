@@ -13,12 +13,11 @@ Some hand in materials will saved here for quick access and unified management.
 
 ## Figure reference
 
-At present, according to [How do I make a reference to a figure in markdown using pandoc?](http://stackoverflow.com/questions/9434536/how-do-i-make-a-reference-to-a-figure-in-markdown-using-pandoc)
+According to [pandoc-crossref
+](https://github.com/lierdakil/pandoc-crossref), to make a label for image and set width at the same time, just type:
 
 ``` vi
-![This is the caption\label{mylabel}](/url/of/image.png)
-See figure \ref{mylabel}.
+![caption a](coolfiga.png){#fig:cfa width=30%}
 ```
 
-However, will port to [pandoc-crossref
-](https://github.com/lierdakil/pandoc-crossref) for more constant usage.
+NOTE that without `pandoc-crossref`, the markdown file convert to html or tex nicely, it seems that `pandoc` itself already has some support to references, but not so much compared with `pandoc-crossref`. (In fact, I failed to covert to html or tex successfully with `pandoc-crossref`, not so sure why this happen).
