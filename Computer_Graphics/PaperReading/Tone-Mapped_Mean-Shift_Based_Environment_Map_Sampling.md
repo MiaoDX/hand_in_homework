@@ -14,19 +14,21 @@ There are many prior work in this filed, the proposed method distinguish itself 
 
 * Irregular decomposition: 
 
-Over-segments an environment map by adaptive mean-shift clustering, with larger kernel sizes for higher intensities, so can do well on **non-uniform** intensity distribution of environment maps
+**Over-segments** an environment map by adaptive mean-shift clustering, with larger kernel sizes for higher intensities, so can do well on **non-uniform** intensity distribution of environment maps
 
-* Adaptive Mean-Shift Clustering by Tone-Mapping: 
+* Adaptive Mean-Shift Clustering by **Tone-Mapping**: 
 
 Classical Mean-Shift Clustering get low-quality segmentation results for HDR environment maps. So, intuitively, we want to define a larger bandwidth in the high-intensity range, and a smaller bandwidth in the low-intensity range. However, not so easy to do (the k-nearest neighbor way).
 
 So, the author ***change the point of view***, 
 
->**We think that using adaptive bandwidth is equivalent to adjusting intensity values of the environment map**. Following this idea, we compress the intensity range adaptively, with more compression on the high intensity range. After non-linear compression, we still adopt a fixed bandwidth, which eventually corresponds to a varying bandwidth in the original intensity range.
+>"**We think that using adaptive bandwidth is equivalent to adjusting intensity values of the environment map**. Following this idea, we compress the intensity range adaptively, with more compression on the high intensity range. After non-linear compression, we still adopt a fixed bandwidth, which eventually corresponds to a varying bandwidth in the original intensity range."
 
 Wow, pretty neat.
 
 And then, much better segments can be generated for HRD map.
+
+*Update*: The segments have close intensities, but different importance metric values.
 
 * Strata Construction via Adaptive Split-and-Merge
 
@@ -43,6 +45,8 @@ An intuitive explanation is as below:
 * Split regions whose energy is much larger than the average importance
 
 These regions are less importance region with more energy than they should have
+
+*Update*: Not only the "less importance region", but also the more importance region who have more energy than they deserve.
 
 * Merge: hierarchically combines the neighboring regions while maintaining importance balance.
 
