@@ -16,7 +16,7 @@ body {
 
 .reveal {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
-  font-size: 30px;
+  font-size: 27px;
   font-weight: normal;
   color: #000; }
 
@@ -50,16 +50,16 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 3.00em; }
+  font-size: 2.50em; }
 
 .reveal h2 {
-  font-size: 1.80em; }
+  font-size: 2.00em; }
 
 .reveal h3 {
-  font-size: 1.35em; }
+  font-size: 1.50em; }
 
 .reveal h4 {
-  font-size: 0.65em; }
+  font-size: 1.00em; }
 
 .reveal h1 {
   text-shadow: none; }
@@ -124,7 +124,7 @@ body {
 .reveal blockquote {
   display: block;
   position: relative;
-  width: 70%;
+  width: 85%;
   margin: 20px auto;
   padding: 5px;
   font-style: italic;
@@ -144,14 +144,14 @@ body {
   width: 90%;
   margin: 20px auto;
   text-align: left;
-  font-size: 0.45em;
+  font-size: 0.55em;
   font-family: monospace;
   line-height: 1.2em;
   word-wrap: break-word;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
 
 .reveal code {
-  font-family: monospace; }
+  font-family: consolas; }
 
 .reveal pre code {
   display: block;
@@ -194,7 +194,7 @@ body {
 
 .reveal small {
   display: inline-block;
-  font-size: 0.45em;
+  font-size: 0.6em;
   line-height: 1.2em;
   vertical-align: top; }
 
