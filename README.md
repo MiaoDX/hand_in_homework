@@ -8,6 +8,7 @@ Some hand in materials will saved here for quick access and unified management.
 ### convert
 
 ``` vi
+# gen_slides.sh
 # proposal.md is the markdown file we want to convert
 pandoc -f markdown -t revealjs --standalone --self-contained proposal.md -o proposal.html -V theme=serif2 -V revealjs-url=H:/class_material/hand_in_homework/pandoc_markdown_revealjs/reveal.js -i
 ```
