@@ -55,11 +55,42 @@ Compared with [GenProg](http://dijkstra.cs.virginia.edu/genprog/), SemFix (or An
 
 ## Analysis of chosen paper
 
-[... Efforts needed]
+> present an automated repair method based on symbolic execution, constraint solving and program synthesis
 
-* error types can be corrected
-* the pipeline
-* results
+
+
+* Statistical Fault Localization
+
+. . .
+
+![](pics/susp.png){width=50%}
+
+* Statement-level specification inference
+* Program synthesis
+
+<div class="notes">
+I am not sure why this can not be generated nicely
+
+$$susp(s) = \frac{failed(s)/totalfailed}{passed(s)/totalpassed + failed(s)/totalfailed}$$
+</div>
+
+
+***
+
+![Architecture of SEMFIX tool](pics/semfix.png){width=65%}
+
+. . .
+
+* Tarantula technique
+    - rank statements according to suspiciousness score
+* KLEE
+    - generate repair constraints
+* Z3 SMT (satisfiability modulo theories) solver
+    - solve a repair constraint
+* Program synthesis
+    - provided by the author
+
+***
 
 ### error types can be corrected
 
@@ -68,16 +99,13 @@ Compared with [GenProg](http://dijkstra.cs.virginia.edu/genprog/), SemFix (or An
 * assignments
 * guards
 
-
-
 ## Examples
 
 ***
 
-### Example#1
+### Example#1 addOneWhenPositive (I)
 
 ``` cpp
-
 int addOneWhenPositive(int x) {
   int r = 0;
   if(x > 0){
@@ -125,6 +153,8 @@ Patch we got:
 
 ***
 
+### Example#1 addOneWhenPositive (II)
+
 ``` vi
 angelix src test.c oracle 1 2 3 --assert assert.json --semfix
 ```
@@ -145,42 +175,10 @@ Patch we got:
     r = x;
 ```
 
-***
-
-### Example#2
-
-``` cpp
-/*
-* This code is copied from class material Ch02- Software Testing Foundations.pptx
-*/
-public static int numZero (int [ ] arr)
-{  // Effects: If arr is null throw NullPointerException
-   // else return the number of occurrences of 0 in arr
-   int count = 0;
-   for (int i = 1; i < arr.length; i++)
-   {
-      if (arr [ i ] == 0)
-      {
-         count++;
-      }
-   }
-   return count;
-}
-```
-
-. . .
-
-Test cases:
-
-``` vi
-TC#1: ([1,2,3];0)
-TC#2: ([1,2,0];1)
-TC#3: ([0,1,2];1)
-```
 
 ***
 
-And, since we use this example, maybe you are wondering about these:
+And, recap what we learned in our class, there are three conceptions about bug:
 
 * Fault
 * Error
@@ -188,57 +186,54 @@ And, since we use this example, maybe you are wondering about these:
 
 ***
 
-### Example#2.2
-
-Test cases#2:
-
-``` vi
-TC#1: (-1;0)
-```
-
-
-***
-
-### Example#3, EASY is relative
+### Example#1 addOneWhenPositive (III)
 
 ``` cpp
-int addOne(int x){
-    return x-1
-}
-```
 
-. . .
+int addOneWhenPositive(int x) {
+  int r = 0;
+  if(x > 0){
+    r = x - 1;
+  }
+  else{
+   r = x;
+  }
 
-Test cases:
-
-``` vi
-TC#1: (-1;0)
-TC#2: (0;1)
-TC#3: (1;2)
-```
-
-. . .
-
-We got:
-
-``` vi
-[...]
-WARNING  repair          no suspicious expressions localized
-[...]
-```
-
-. . .
-
-``` cpp
-int addOne(int x) {
-  int r = x - 1;
   return r;
 }
 ```
 
 . . .
 
-Still no good luck.
+With test cases:
+
+``` vi
+TC#1: (-1;-1)
+TC#2: (0;0)
+```
+
+. . .
+
+``` vi
+angelix src test.c oracle 1 2 3 --assert assert.json --semfix
+```
+
+
+``` vi
+INFO     project         configuring validation source
+INFO     project         building json compilation database from validation source
+INFO     testing         running test '1' of validation source
+INFO     testing         running test '2' of validation source
+INFO     project         configuring frontend source
+INFO     transformation  instrumenting repairable of frontend source
+INFO     project         building frontend source
+INFO     repair          running positive tests for debugging
+INFO     testing         running test '1' of frontend source
+INFO     testing         running test '2' of frontend source
+INFO     repair          repair test suite: ['1', '2']
+INFO     repair          validation test suite: ['1', '2']
+INFO     localization    No negative test exists
+```
 
 ***
 
@@ -258,17 +253,176 @@ Lesson learned:
 * make install
 * `master` branch of codebase
 
-## Architecture of the program
+***
+
+<div id="fig:program_repair">
+![](pics/path_1.png){width=48%}
+![](pics/path_2.png){width=48%}
+</div>
+
+export PATH by providing a `profile` file <br>
+[https://github.com/mechtaev/angelix/blob/master/activate](https://github.com/mechtaev/angelix/blob/master/activate)
+
+## workflow of the program
 
 ![workflow](pics/workflow.png){width=65%}
 
 ***
 
-A simplified version:
+## Limits
 
-[...]
+* Generalization of the fix
+    - rely on the test suite
+* Other statistical debugging metrics
+    - ![](pics/susp.png){width=50%}
+    - > A statement exercised by more failing tests and fewer passing tests will have a higher suspiciousness score.
+* Other
 
 ***
+
+### Example#3 semfix inc
+
+``` cpp
+// Change from the original semfix inc
+// https://github.com/mechtaev/angelix/blob/master/tests/semfix/src/test.c
+
+#include <stdio.h>
+
+#ifndef ANGELIX_OUTPUT
+#define ANGELIX_OUTPUT(type, expr, id) expr
+#endif
+
+int inc(int i) {
+  return i - 1; // +
+}
+
+int main(int argc, char *argv[]) {
+  int x, n;
+  x = atoi(argv[1]);
+  n = inc(x);
+  printf("%d\n", ANGELIX_OUTPUT(int, n, "n"));
+  return 0;
+}
+```
+
+. . .
+
+``` vi
+TC#1: (1;2)
+TC#2: (2;3)
+TC#3: (3;4)
+```
+
+. . .
+
+``` vi
+angelix src test.c oracle 1 2 3 --assert assert.json --semfix --synthesis-level variables
+```
+
+``` patch
+--- a/test.c
++++ b/test.c
+@@ -11,7 +11,7 @@
+ int main(int argc, char *argv[]) {
+   int x, n;
+   x = atoi(argv[1]);
+-  n = inc(x);
++  n = (1 + x);
+   printf("%d\n", ANGELIX_OUTPUT(int, n, "n"));
+   return 0;
+ }
+```
+
+
+***
+
+### Example#4 for-loop (I)
+
+``` cpp
+// The original for-loop
+// https://github.com/mechtaev/angelix/blob/master/tests/for-loop/src/test.c
+
+#include <stdio.h>
+
+#ifndef ANGELIX_OUTPUT
+#define ANGELIX_OUTPUT(type, expr, id) expr
+#endif
+
+int main(int argc, char *argv[]) {
+  int n;
+  n = atoi(argv[1]);
+  for (n = n - 1; n > 0; n--) { // >=
+    printf("%d\n", ANGELIX_OUTPUT(int, n, "n"));
+  }
+  return 0;
+}
+```
+
+. . .
+
+Test cases:
+
+``` vi
+TC#1: (2;[1, 0])
+TC#2: (3;[2, 1, 0])
+TC#3: (4;[3, 2, 1, 0])
+```
+
+. . .
+
+``` vi
+angelix src test.c oracle 1 2 3 --assert assert.json --klee-max-forks 5 --defect loop-conditions
+```
+
+``` patch
+--- a/test.c
++++ b/test.c
+@@ -7,7 +7,7 @@
+ int main(int argc, char *argv[]) {
+   int n;
+   n = atoi(argv[1]);
+-  for (n = n - 1; n > 0; n--) { // >=
++  for (n = n - 1; (n >= 0); n--) { // >=
+     printf("%d\n", ANGELIX_OUTPUT(int, n, "n"));
+   }
+   return 0;
+```
+
+
+*** 
+
+### Example#4 for-loop (II)
+
+However, if we change the start point
+
+``` cpp
+#include <stdio.h>
+
+#ifndef ANGELIX_OUTPUT
+#define ANGELIX_OUTPUT(type, expr, id) expr
+#endif
+
+int main(int argc, char *argv[]) {
+  int n;
+  n = atoi(argv[1]);
+  for (n = n - 2; n >= 0; n--) { // >=
+    printf("%d\n", ANGELIX_OUTPUT(int, n, "n"));
+  }
+  return 0;
+}
+```
+
+. . .
+
+Same `oracle`, `assert.json` and command as before, but 
+
+``` vi
+[...]
+INFO     inference       found 0 angelic paths for test '1'
+INFO     repair          no patch generated in 8s
+FAIL
+```
+
 
 ## What's Next?
 
