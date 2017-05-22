@@ -253,6 +253,13 @@ Lesson learned:
 * make install
 * `master` branch of codebase
 
+. . .
+
+And
+
+* share compressed file (>9 GB vs 2.80 GB)
+* build in a better PC
+
 ***
 
 <div id="fig:program_repair">
