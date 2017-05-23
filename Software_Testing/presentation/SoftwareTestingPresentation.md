@@ -1,6 +1,6 @@
 % Software Testing Project <br> SemFix
 % 2016218037 刘莞姝 <br> 2016218040 马舒婕 <br> 2016218046 滕　飞 <br> 2016218055 杨宇杰 <br>  2016218041 缪东旭（组长）<br>
-% May 19, 2017
+% May 24, 2017
 
 ## What are we going to talk about?
 
