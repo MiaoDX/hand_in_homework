@@ -135,6 +135,26 @@ TC#3: (1;2)
 angelix src test.c oracle 1 2 3 --assert assert.json
 ```
 
+***
+
+### Example#1 addOneWhenPositive (I)
+
+``` cpp
+int addOneWhenPositive(int x) {
+  int r = 0;
+  if(x > 0){
+    r = x - 1;
+  }
+  else{
+   r = x;
+  }
+
+  return r;
+}
+```
+
+. . .
+
 Patch we got:
 
 ``` patch
@@ -221,12 +241,8 @@ angelix src test.c oracle 1 2 3 --assert assert.json --semfix
 
 ``` vi
 INFO     project         configuring validation source
-INFO     project         building json compilation database from validation source
-INFO     testing         running test '1' of validation source
-INFO     testing         running test '2' of validation source
-INFO     project         configuring frontend source
-INFO     transformation  instrumenting repairable of frontend source
-INFO     project         building frontend source
+INFO     project         building json compilation database from validation 
+[...]
 INFO     repair          running positive tests for debugging
 INFO     testing         running test '1' of frontend source
 INFO     testing         running test '2' of frontend source
@@ -287,7 +303,7 @@ export PATH by providing a `profile` file <br>
 
 ***
 
-### Example#3 semfix inc
+### Example#2 semfix inc
 
 ``` cpp
 // Change from the original semfix inc
@@ -326,6 +342,16 @@ TC#3: (3;4)
 angelix src test.c oracle 1 2 3 --assert assert.json --semfix --synthesis-level variables
 ```
 
+***
+
+### Example#2 semfix inc
+
+``` vi
+angelix src test.c oracle 1 2 3 --assert assert.json --semfix --synthesis-level variables
+```
+
+Patch we got:
+
 ``` patch
 --- a/test.c
 +++ b/test.c
@@ -343,7 +369,7 @@ angelix src test.c oracle 1 2 3 --assert assert.json --semfix --synthesis-level 
 
 ***
 
-### Example#4 for-loop (I)
+### Example#3 for-loop (I)
 
 ``` cpp
 // The original for-loop
@@ -381,6 +407,16 @@ TC#3: (4;[3, 2, 1, 0])
 angelix src test.c oracle 1 2 3 --assert assert.json --klee-max-forks 5 --defect loop-conditions
 ```
 
+***
+
+### Example#3 for-loop (I)
+
+``` vi
+angelix src test.c oracle 1 2 3 --assert assert.json --klee-max-forks 5 --defect loop-conditions
+```
+
+Patch we got:
+
 ``` patch
 --- a/test.c
 +++ b/test.c
@@ -398,7 +434,7 @@ angelix src test.c oracle 1 2 3 --assert assert.json --klee-max-forks 5 --defect
 
 *** 
 
-### Example#4 for-loop (II)
+### Example#3 for-loop (II)
 
 However, if we change the start point
 
