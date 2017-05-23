@@ -75,6 +75,34 @@ $$susp(s) = \frac{failed(s)/totalfailed}{passed(s)/totalpassed + failed(s)/total
 </div>
 
 
+
+***
+
+### Statistical Fault Localization
+
+<div id="fig:paper">
+![](pics/paper_code.png){width=49%}
+![](pics/paper_table_1_2.png){width=49%}
+</div>
+
+***
+
+### Generate repair constraint
+
+<div id="fig:paper2">
+![](pics/paper_code.png){width=49%}
+![](pics/paper_table_1.png){width=49%}
+</div>
+
+. . .
+
+The constraint that f needs to satisfy
+
+``` cpp
+f(1,11,110)>110 ∧ f(1,0,100)≤100 ∧ f(1,−20,60)>60
+```
+
+
 ***
 
 ![Architecture of SEMFIX tool](pics/semfix.png){width=65%}
@@ -89,6 +117,7 @@ $$susp(s) = \frac{failed(s)/totalfailed}{passed(s)/totalpassed + failed(s)/total
     - solve a repair constraint
 * Program synthesis
     - provided by the author
+
 
 ***
 
