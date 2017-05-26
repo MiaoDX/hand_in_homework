@@ -20,7 +20,7 @@ based methods **separately**
 ## Proposed method
 
 * instead of tessellating with individual tiles (or regions), we build the boundary of each tile by the growth of curves
-* employs a particle system where particle trails form curves
+* employs a particle system where **particle trails** form curves
 * propose an automatic mosaic method with good texture suggestion
 * expand the idea to present both abstract and natural patterns, introducing two variations, a splitting technique and a stacking technique.
 
@@ -33,7 +33,7 @@ The key calculations are as follows:
 $a=\frac{F}{m}$ for a force F, $v=v_0+a\times \Delta t, x=x_0+v\times \Delta t$, and we use unit mass $m=1$. We use **different force configurations for different purposes**.
 
 
-## different force configurations for different purposes
+## Different force configurations for different purposes
 
 ### mosaic styles
 
@@ -43,16 +43,16 @@ we read $\overrightarrow{F}$ from a vector field (smooth first).
 
 we use the Lorentz force, previously used to generate magnetic curves:
 
-We use a constant $\overrightarrow{B}={0,0,−1}$, which generates a 2D curve forcing the particle to move in the $xy$ plane:
+We use a constant $\overrightarrow{B}={0,0,-1}$, which generates a 2D curve forcing the particle to move in the $xy$ plane:
 
 $$\overrightarrow{F}=q\overrightarrow{v}\times \overrightarrow{B}$$
 
 The value of the charge $q$ controls the curvature of the curve, and we assign it as $q=s\ast f(t)$, so change $f(t)$ we get what we want, there are four types demonstrated in this paper.
 
-* Type I, $f(t)=(500−t)^{0.8}$
+* Type I, $f(t)=(500-t)^{0.8}$
 * Type II, random irregular curve
     - Used in Splitting Technique to generate cracks or leaves like curve
-* Type III,  a slightly flatter curve $f(t) = 0.001\ast (t −((int)(t/500))\ast 500$
+* Type III,  a slightly flatter curve $f(t) = 0.001\ast (t-((int)(t/500))\ast 500$
     - Used in Stacking Technique to create the illusion of 3D shapes
 * Type IV, $f(t) = sgn(AngleChange(f(t_0)) > θ(t)))\ast (f(t_0)+Random(0.0001,0.01))$
     - Jigsaw-like example
