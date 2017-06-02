@@ -1,6 +1,6 @@
 # Cube2Video: Navigate Between Cubic Panoramas in Real-Time
 
-Navigate a sparse point-to-point of collection panoramas can be a less pleasant viewing experience, since they will bring users apparent visual discontinuity. The proposed methods overcome this by make the cubic panoramas into much more smoothy movie via triangle-to-triangle homography-based warping and interpolate novel viewpoints from the given reference panoramas.
+Navigate a sparse point-to-point of collection panoramas can be a less pleasant viewing experience, since they will bring users apparent visual discontinuity. The proposed methods overcome this by make the cubic panoramas into much more smooth movie via **triangle-to-triangle** homography-based warping and **interpolate** novel viewpoints from the given reference panoramas.
 
 
 ## Outlines
@@ -22,7 +22,7 @@ Navigate a sparse point-to-point of collection panoramas can be a less pleasant 
 assume the angels between different correspondence pairs are close
 
 Avoid wrong candidate matches lie on or close is antipodal to the epipolar plane by translate the point into the second panorama sphere, and calculate the
-angle between the resulting and its possible match, if the angle is too much, great chance this is a false positve.
+angle between the resulting and its possible match, if the angle is too much, great chance this is a false positive.
 
 ### Triangulating Panoramas
 
@@ -45,9 +45,9 @@ Solution: transform the gray curve (simply projecting) to make its starting and 
 
 ### Implements
 
-It seems that the program is really no trival.
+It seems that the program is really no trial.
 
 
 ## Conclusion
 
-At that time, the panoramas is not so widely used and since the commerial usage is mainly Google Street View (nowdays, many player have entered this area), and they are not so into the smoothy nagivation since the sample distance can be a little too large. While nowdays, more and more applications show up and more players come into this field, this work shows more value.
+At that time, the panoramas is not so widely used and since the commercial usage is mainly Google Street View, and they are not so into the smooth navigation since the sample distance can be a little too large. While nowadays, more and more applications show up and more players come into this field, this work shows more value.

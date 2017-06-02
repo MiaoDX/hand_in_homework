@@ -1,0 +1,1 @@
+pandoc -f markdown -t latex Cube2Video.md -o latex_file/Cube2Video.tex
