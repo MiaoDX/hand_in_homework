@@ -183,6 +183,12 @@ The openai:
 
 Some environments of openai gym:
 
-![]()
+![](pics/gym_env.png){width=55%}
 
-## 
+## That's all, thank you
+
+> Good luck and have fun
+
+Many thanks to Mr. Hao and all of you :)
+
+And please say hai when meet each other.
