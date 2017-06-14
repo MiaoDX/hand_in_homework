@@ -1,6 +1,6 @@
 % Advanced AI Project<br> Pacman Capture the Flag <br>
 % Wanshu Liu 刘莞姝 <br> 2016218037 <br> <br> MiaoDX 缪东旭 <br> 2016218041 <br>
-% June 6, 2017
+% June 13, 2017
 
 
 ![Pacman Capture the Flag](pics/pacman_1.png){width=85%}
@@ -65,9 +65,11 @@ When eating:
 }
 ```
 
-. . .
+***
 
 When backing:
+
+> A game ends when one team returns all but two of the opponents' dots. 
 
 ``` python
 [...]
@@ -89,6 +91,8 @@ if now_state.numCarrying >= 5 or len(opponent_food_left_now) <= 2:
 ***
 
 And, another little trick:
+
+. . .
 
 Whenever we enter the opponent side, we set our back reference point (where we will go towards when backing) randomly from the remaining food of our side (if no left, remains the former one). So, our backing strategy have some *ability to behave randomly*.
 
@@ -112,11 +116,12 @@ It is awesome.
 
 ***
 
-So, we can combine it with our team, especially the **Hidden Markov Model inference** part to make our opponent agent's position much more determinate. And all other code remains unchanged:
+So, we can combine it with our team, especially the **Hidden Markov Model inference** part to make our opponent agent's position much more determinate:
 
 ``` python
 [...]
-ghosts_distance = [self.getMazeDistance(successor_pos, g_pos) for g_pos in enemy_ghosts_pos]
+opponentDistances = self.getOpponentDistances(successor) # we calc the successor's dis to the opponent
+opponentDistance = min([dist for id, dist in opponentDistances])
 [...]
 ```
 
@@ -136,7 +141,7 @@ Picture from [cs63/s16/slides/3-25_approximate_Q-learning.pdf](https://www.cs.sw
 
 ***
 
-And in fact, we are already used some of the Approximate Q-learning, the feature and wight part we mentioned can be treat as the `test` phase of it.
+And in fact, we are already used some of the Approximate Q-learning, the feature and wight part we mentioned can be considered as the `test` process of it.
 
 . . .
 
@@ -191,4 +196,4 @@ Some environments of openai gym:
 
 Many thanks to Mr. Hao and all of you :)
 
-And please say hai when meet each other.
+And please say hi when meet each other.

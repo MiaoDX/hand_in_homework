@@ -64,7 +64,7 @@ class ReflexCaptureAgent(CaptureAgent):
 
     # mine
     self.allFoodNum = len(self.getFood(gameState).asList())
-    self.home_point = (20.0, 10.0) # just init, true value will be assigned when encouter the opponent
+    self.home_point = self.start # just init, true value will be assigned when encouter the opponent
 
   def chooseAction(self, gameState):
     """
@@ -176,7 +176,7 @@ class ReflexCaptureAgent(CaptureAgent):
   
   def debug_pause(self):
     import os
-    os.system("pause")
+    #os.system("pause")
 
 class OffensiveReflexAgent(ReflexCaptureAgent):
   """
@@ -197,10 +197,12 @@ class OffensiveReflexAgent(ReflexCaptureAgent):
       successor_state = successor.getAgentState(self.index)
       now_state_pos = now_state.getPosition()
 
+      # going to enter opponent side, set home point
       if now_state.isPacman == False and successor_state.isPacman == True:
           print("Going to reset the home_point!")            
           home_foodList = self.getFoodYouAreDefending(successor).asList()
-          self.home_point = random.choice(home_foodList)
+          if len(home_foodList) > 0:
+            self.home_point = random.choice(home_foodList)
           print(self.home_point)
           self.debug_pause()
 
@@ -238,8 +240,8 @@ class OffensiveReflexAgent(ReflexCaptureAgent):
       if len(enemy_ghosts) > 0:
         ghosts_distance = [self.getMazeDistance(successor_pos, g_pos) for g_pos in enemy_ghosts_pos]
         features['ghostDistance'] = float(min(ghosts_distance))
-        nearby_ghosts = sum(d < 3 for d in ghosts_distance)
-        features['#-of-nearby-ghosts'] = float(nearby_ghosts)
+        #nearby_ghosts = sum(d < 3 for d in ghosts_distance)
+        #features['#-of-nearby-ghosts'] = float(nearby_ghosts)
       else:
         features['ghostDistance'] = 3 # just a hardcode value
       
@@ -248,15 +250,12 @@ class OffensiveReflexAgent(ReflexCaptureAgent):
       #print(state)
       #print(successor)
 
+      
       print(state == successor)
       if not state == successor:
             print(self.getScore(successor))
             print(self.getScore(state))
             #self.debug_pause()
-
-      
-      #print("FOOD:\n")
-      #print(food)
 
       print("X,Y,NEXT_X,NEXT_Y")
       print(x,y,next_x,next_y)
@@ -273,18 +272,18 @@ class OffensiveReflexAgent(ReflexCaptureAgent):
 
       # if we already eat some points and have not save it (back to our side), say 5, save it first
       opponent_food_left_now = self.getFood(state).asList()
-      if now_state.numCarrying >= 5 or len(opponent_food_left_now) == 0:
+      if now_state.numCarrying >= 5 or len(opponent_food_left_now) <= 2:
         print("Maybe we should go home, totally {} points, our score {}, and eaten but not saved {}, remains {} points \n".format(self.allFoodNum, self.getScore(state), now_state.numCarrying, len(opponent_food_left_now) ))
         
         #self.debug_pause()
-        features['dis_to_home'] = self.getMazeDistance(successor_pos, self.home_point)
+        features['homeDistance'] = self.getMazeDistance(successor_pos, self.home_point)
         """
         home_foodList = self.getFoodYouAreDefending(successor).asList()
         # Compute distance to the nearest food
         if len(home_foodList) > 0: # This should always be True,  but better safe than sorry
           minDistance = min([self.getMazeDistance(successor_pos, food) for food in home_foodList])
           #features["closest-food"] = float(minDistance) / (walls.width * walls.height)
-          features['dis_to_home'] = minDistance
+          features['homeDistance'] = minDistance
         """
         features['distanceToFood'] = 0.0
         features['successorScore'] = 0.0
@@ -307,8 +306,8 @@ class OffensiveReflexAgent(ReflexCaptureAgent):
   def getWeights(self, gameState, action):
     #return {'successorScore': 100, 'distanceToFood': -1}
     #return {'successorScore': 100, 'distanceToFood': -1, 'invaderDistance': -10}
-    #return {'successorScore': 20.0, 'ghostDistance': 3, '#-of-nearby-ghosts':-1.0, "distanceToFood": -2.0, 'stop': -10.0, 'reverse': -2.0, 'dis_to_home': -20.0}
-    return {'successorScore': 30.0, 'ghostDistance': 3.0, "distanceToFood": -2.0, 'stop': -50.0, 'reverse': -5.0, 'dis_to_home': -20.0}
+    #return {'successorScore': 20.0, 'ghostDistance': 3, '#-of-nearby-ghosts':-1.0, "distanceToFood": -2.0, 'stop': -10.0, 'reverse': -2.0, 'homeDistance': -20.0}
+    return {'successorScore': 30.0, 'ghostDistance': 3.0, 'distanceToFood': -2.0, 'stop': -50.0, 'reverse': -5.0, 'homeDistance': -20.0}
 
 class DefensiveReflexAgent(ReflexCaptureAgent):
   """
