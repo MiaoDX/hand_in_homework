@@ -114,13 +114,13 @@ We add some examples on the unrealcv side.
     
 
 * Demo usages
-    - faster rcnn
-    - Deep Q-Learning
+    - generate dataset
+    - evaluate faster rcnn
 
 ***
 ## Step by step guide
 
-The guide to set up the whole environment can be found in [my write-ups](this is a website page)
+The guide to set up the whole environment can be found in [my write-ups](https://github.com/MiaoDX/unrealcv_examples/installation_and_set_up.md)
 
 ***
 ## What I have done?
@@ -170,7 +170,7 @@ The (unrealcv) official demo need the [rbgirshick/py-faster-rcnn with caffe supp
 
 . . .
 
-I integrate/test one of the tensorflow implements, [smallcorgi/Faster-RCNN_TF](https://github.com/smallcorgi/Faster-RCNN_TF), and all instructions can be found at [my write-ups](this is a website page).
+I integrate/test one of the tensorflow implements, [smallcorgi/Faster-RCNN_TF](https://github.com/smallcorgi/Faster-RCNN_TF), and all instructions can be found at [my write-ups](https://github.com/MiaoDX/unrealcv_examples/installation_and_set_up.md).
 
 
 ***
@@ -178,7 +178,73 @@ I integrate/test one of the tensorflow implements, [smallcorgi/Faster-RCNN_TF](h
 
 We show a demo of using different color of sofa generated from the unrealcv and test the faster rcnn implements to see whether they are invariant to color.
 
-Codes can be found at [codes](the code)
+Codes can be found at [MiaoDX/unrealcv_examples](https://github.com/MiaoDX/unrealcv_examples).
+
+***
+Generate images
+
+``` vi
+ᐅ python generate_images_unrealcv.py 
+Total number: 8000
+INFO:__init__:204:Got connection confirm: 'connected to RealisticRendering'
+2017-06-16 01:02:35
+1497546156.0
+0/8000 ... 2017-06-16 01:02:35
+100/8000 ... 2017-06-16 01:03:04
+200/8000 ... 2017-06-16 01:03:32
+300/8000 ... 2017-06-16 01:03:59
+400/8000 ... 2017-06-16 01:04:29
+
+[...]
+
+7600/8000 ... 2017-06-16 01:37:17
+7700/8000 ... 2017-06-16 01:37:42
+7800/8000 ... 2017-06-16 01:38:07
+7900/8000 ... 2017-06-16 01:38:33
+2017-06-16 01:38:58
+1497548338.49
+Duration:2182.49328804s
+```
+
+So, it spent around 2182/60=36.37 minutes to generate 8000 images, much more quicker than in real environments. The files are around 4.4GB.
+
+***
+Get confidence score from Faster-RCNN_TF:
+
+``` vi
+Loaded network /home/miao/virtual_world/codes/faster_rcnns/Pretrained/VGGnet_fast_rcnn_iter_70000.ckpt
+Init_tf done
+init network done
+Total number: 8000
+0/8000 ... 2017-06-16 02:00:59
+50/8000 ... 2017-06-16 02:01:10
+100/8000 ... 2017-06-16 02:01:20
+150/8000 ... 2017-06-16 02:01:30
+200/8000 ... 2017-06-16 02:01:40
+
+[...]
+
+7750/8000 ... 2017-06-16 02:26:24
+7800/8000 ... 2017-06-16 02:26:33
+7850/8000 ... 2017-06-16 02:26:43
+7900/8000 ... 2017-06-16 02:26:53
+7950/8000 ... 2017-06-16 02:27:02
+After calc, success ratio:0.955375, fail ration:0.044625
+
+[...]
+
+ALL DONE
+1497551233.16
+Duration:1573.80028796s
+```
+
+The fail above means the confidence if less than 0.8.
+
+***
+Intuitive evaluation experiment:
+
+![6_dof_measure of 8000 images](pics/6_dof_measure.png){width=80%}
+
 
 # Related Work
 
