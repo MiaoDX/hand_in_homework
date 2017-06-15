@@ -29,25 +29,33 @@
 * Collecting data 
 * Training set for algorithms
 * Evaluating existing algorithms (extra testing set)
-* Integrating it with other platforms and provide potential improvements for current algorithms
+* Integrating it with other platforms and provide environments for training
 
 ***
 ## Synthetic computer vision & Computer Graphics
 
-Take advantage of existing advance in rending/texture/simulation ... technologies:
+Take advantage of existing technology advances in lighting, cameras, materials, shaders & textures, particles & visual effects ...
 
-To be more specific, we concentrate on one of the most widely used game engine -- Unreal 4
+. . .
 
-And what's more, it is open-sourced.
+To be more specific, one of the most widely used game engine -- Unreal 4
 
-[It can generate highly `near-photo-realistic indoor scenes` and simulation of various physical movements]
+. . .
+
+And, it is open-sourced (unlike Unity 3D)
+
+It can generate highly **near-photo-realistic indoor scenes** and simulate various physical movements.
 
 ***
 ## Beyond Graphics?
 
 The ML/DL/RL is an pretty hot area now, and we are expected to have the ability when we are seeking a job.
 
+. . .
+
 So, get our toes wet with it is worthy and this project can do some help to it. Especially the combination of virtual world with RL algorithms part.
+
+. . .
 
 Plus, it's interesting :)
 
@@ -55,10 +63,14 @@ Plus, it's interesting :)
 
 This project have changed a lot from the very beginning.
 
+. . .
+
 Dropped:
 
 * GTA V
 * Physical engine
+
+. . .
 
 Added:
 
@@ -70,7 +82,7 @@ Added:
 
 > We don't produce water. We are porters of nature.
 
-I am not create something new, rather I reproduce/combine existing projects and provide a systematic guideline for newbies.
+I am not create something new, rather I reproduce/combine existing projects and provide a systematic guidance    for newbies.
 
 ***
 ## General View
@@ -152,9 +164,13 @@ for [loc, rot] in camera_trajectory:
 ***
 ## Faster rcnn
 
-The official demo need the [rbgirshick/py-faster-rcnn with caffe support](https://github.com/rbgirshick/py-faster-rcnn), which can be not so easy to use.
+. . .
 
-I integrate/test two tensorflow implements, and all instructions can be found at [my write-ups](this is a website page).
+The (unrealcv) official demo need the [rbgirshick/py-faster-rcnn with caffe support](https://github.com/rbgirshick/py-faster-rcnn), which can be not so easy to set up and I personally like tensorflow since it's easy to use and better communities by far.
+
+. . .
+
+I integrate/test one of the tensorflow implements, [smallcorgi/Faster-RCNN_TF](https://github.com/smallcorgi/Faster-RCNN_TF), and all instructions can be found at [my write-ups](this is a website page).
 
 
 ***
@@ -174,6 +190,8 @@ We only cover a small aspect of synthetic computer vision:
 * AI2-THOR (The House Of inteRactio, it is highly similar to unrealcv, used Unity 3D)
 * ...
 
+. . .
+
 More can be found at [unrealcv/synthetic-computer-vision list](https://github.com/unrealcv/synthetic-computer-vision)
 
 
@@ -183,8 +201,9 @@ More can be found at [unrealcv/synthetic-computer-vision list](https://github.co
 * Transfer of knowledge
 
 ***
-## References
+# References
 
+***
 Online resources:
 
 * Real-Time Physics Simulation, [http://bulletphysics.org/](http://bulletphysics.org/)
@@ -210,13 +229,15 @@ Papers:
 ***
 ## That's all
 
+. . .
+
 Great thanks to Ms. Wan for your classes and project assignment.
 
 And all of our classmates.
 
 . . .
 
-What's more, it's my last presentation in first year of graduate life.
+What's more, it's my last presentation in first year of graduate life!
 
 > Good Luck & Have Fun!<br>
 > MiaoDX
