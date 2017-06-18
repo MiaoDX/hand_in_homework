@@ -67,6 +67,7 @@ Addition note:
 linewidth=0.5\textwidth, # to specify the linewidth, useful when in two column template, linewidth=0.5\textwidth
 ```
 
+And there is one back up for [the `listings-setup.tex` file](listings-setup.tex)
 
 ## The separation line (horizontal rule)
 
