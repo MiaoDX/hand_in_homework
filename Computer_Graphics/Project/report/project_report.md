@@ -136,7 +136,7 @@ The experiment is pretty easy to follow under the official guidance, we did a ex
 
 ![gym unrealcv DQN reward (2061 epochs)](pics/gym_unrealcv_reward.png){#fig:gym_unrealcv_reward width=70%}
 
-![gym unrealcv DQN trajectories (2061 epochs)](pics/gym_unrealcv_traj.png){#fig:gym_unrealcv_traj width=70%}
+![gym unrealcv DQN trajectories (2061 epochs)](pics/gym_unrealcv_traj.png){#fig:gym_unrealcv_traj width=80%}
 
 
 ## Test algorithms with synthetic data
@@ -226,7 +226,11 @@ There are around 4.46% experiments failed in our test, which is pretty shocked t
 
 First, we give a intuitive evaluation experiment, Figure \ref{fig:6_dof_measure} shows the relation between score and every DOF (degreed of freedom) difference from the sofa, we can see from the figure that the bigger difference, the higher possibility of fail to recognize the sofa.
 
-![6-dof measure of 8000 images](pics/6_dof_measure.png){#fig:6_dof_measure width=85%}
+![6-dof measure of 8000 images](pics/6_dof_measure.png){#fig:6_dof_measure width=95%}
+
+Then we draw the distribution of the score in Figure \ref{fig:score_number}, we can see from it that this implements behave pretty good, but have some points with low performance.
+
+![scores and their distribution](pics/score_number.png){#fig:score_number width=85%}
 
 
 And we then look into the failed ones, we list the worst 30 images and their scores in Figure \ref{fig:worst_0_30}. There is a common character that looking the soft in a no frontal down view will probably not produce nice results. Great chances are that the training dataset used for training may lack sofas in such kind of view. And more not so good images are listed in the [... latter on]
@@ -246,3 +250,29 @@ And there are some drawbacks/future improvements of synthetic data, the data is 
 # Acknowledgments
 
 Great thanks to Ms. Wan for her classes and project assignment, especially the basic conception of graphics, like pin-hole camera geometry, camera matrix, lighting and many others. The freedom of project chosen is pretty nice, and the overall guidance of project is time consuming for her and at the same time make our project on schedule.
+
+
+
+
+
+
+\bibliographystyle{abbrv}
+
+\bibliography{sigproc}
+
+\appendix
+\section{Extra results of faster rcnn experiments}
+
+We will list some of the not so good results in the faster rcnn experiments, and like the Figure \ref{worst_0_30.png}, every images contains 30 images and their corresponding confidence score, we listed images with score less that 60% or so. So we can see from the images that, it indeed have some problems for the no frontal top view of sofa.
+
+![Worst 31-60 images](pics/worst_30_60.png){width=80%}
+
+![Worst 61-90 images](pics/worst_60_90.png){width=80%}
+
+![Worst 91-120 images](pics/worst_90_120.png){width=80%}
+
+![Worst 121-150 images](pics/worst_120_150.png){width=80%}
+
+![Worst 151-180 images](pics/worst_150_180.png){width=80%}
+
+\balancecolumns
