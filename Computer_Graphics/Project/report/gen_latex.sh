@@ -1,0 +1,1 @@
+pandoc -f markdown -t latex project_report.md -o latex_file/project_report.tex --listings
